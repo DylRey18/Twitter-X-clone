@@ -1,12 +1,12 @@
 import React from 'react';
-//import "./Sidebar.css"
+import "../../assets/styles/SidebarLeft.css"
 import { FaXTwitter } from "react-icons/fa6";
 import { MdHomeFilled, MdOutlineMailOutline } from "react-icons/md";
 import { FaSearch,FaRegBookmark } from "react-icons/fa";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { IoPersonOutline } from "react-icons/io5";
 
-function Sidebar() {
+function SidebarLeft() {
   return (
     <div className='sidebar'>
       {/*x icon */}
@@ -28,4 +28,4 @@ function Sidebar() {
   )
 }
 
-export default Sidebar
+export default SidebarLeft
