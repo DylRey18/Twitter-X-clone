@@ -1,17 +1,22 @@
 import React from "react";
 import './App.css';
-import Sidebar from "./components/Sidebar.js"
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom"
+import Sidebar from "./components/pagesLayout/SidebarLeft.js"
+
 
 function App() {
   return (
-    <div className="App">
-      <h1>
-        testing
-      </h1>
+    <>
+    {/* If you put in router it shows regardless of the link or path */}
+      <Router>
+        {/* if you put in switch and give it the route, it will only show with specific path */}
+        <Routes>
+          <Route>
 
-      <Sidebar />
-
-    </div>
+          </Route>
+        </Routes>
+      </Router>
+    </>
   );
 }
 
