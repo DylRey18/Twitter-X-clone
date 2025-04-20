@@ -1,0 +1,57 @@
+.display-flex {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+}
+
+.justify-content-c {
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+}
+
+.justify-content-sb {
+-webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+}
+
+.justify-content-se {
+-webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+}
+
+.justify-content-fe {
+-webkit-box-pack: end;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+}
+
+.layout-container {
+display: flex; /* Makes the children arrange side by side */
+height: 100vh; /* Ensures the layout takes the full viewport height */
+}
+
+.layout-container > * {
+flex-shrink: 0; /* Prevents shrinking of sidebars */
+}
+
+/* SidebarLeft styles */
+.layout-container .sidebar-left {
+width: 30%; /* Adjust as needed for sidebar width */
+background-color: #15202b; /* Example background color */
+}
+
+/* Main content styles */
+.layout-container main {
+width: 40%; /* Expands to fill available space */
+padding: 1em; /* Optional padding */
+background-color: #15202b; /* Example background */
+}
+
+/* SidebarRight styles */
+.layout-container .sidebar-right {
+width: 30%; /* Adjust as needed for sidebar width */
+background-color: #15202b; /* Example background color */
+}

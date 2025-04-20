@@ -5,14 +5,14 @@ import SidebarRight from './SidebarRight'
 
 function Layout({children}) {
   return (
-    <> 
+    <div className="layout-container">
     <SidebarLeft />
     <main>
       {/* The switchable content in the middle goes here */}
       {children}
     </main>
     <SidebarRight />
-    </>
+    </div>
   )
 }
 
