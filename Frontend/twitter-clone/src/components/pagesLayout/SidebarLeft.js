@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "../../assets/styles/SidebarLeft.css"
 import { FaXTwitter } from "react-icons/fa6";
 import { MdHomeFilled, MdOutlineMailOutline } from "react-icons/md";
@@ -7,39 +7,33 @@ import { IoMdNotificationsOutline } from "react-icons/io";
 import { IoPersonOutline } from "react-icons/io5";
 
 function SidebarLeft() {
-  return (
-    <div className='sidebar-left'>
-      {/*x icon */}
-      <div className={`sidebar-item active`}>
-        <FaXTwitter className="sidebar-icon" />
-      </div>
-      <div className="sidebar-item">
-        <MdHomeFilled className="sidebar-icon" />
-        <span>Home</span>
-      </div>
-      <div className="sidebar-item">
-        <FaSearch className="sidebar-icon" />
-        <span>Explore</span>
-      </div>
-      <div className="sidebar-item">
-        <IoMdNotificationsOutline className="sidebar-icon" />
-        <span>Notifications</span>
-      </div>
-      <div className="sidebar-item">
-        <MdOutlineMailOutline className="sidebar-icon" />
-        <span>Messages</span>
-      </div>
-      <div className="sidebar-item">
-        <FaRegBookmark className="sidebar-icon" />
-        <span>Bookmarks</span>
-      </div>
-      <div className="sidebar-item">
-        <IoPersonOutline className="sidebar-icon" />
-        <span>Profile</span>
-      </div>
-    </div>   
+  const [active, setActive] = useState("home"); // State for active item
 
-  )
+  const menuItems = [
+    { id: "X", icon: <FaXTwitter className="sidebar-icon"/>, text: "" },
+    { id: "home", icon: <MdHomeFilled className="sidebar-icon" />, text: "Home" },
+  { id: "explore", icon: <FaSearch className="sidebar-icon" />, text: "Explore" },
+  { id: "notifications", icon: <IoMdNotificationsOutline className="sidebar-icon" />, text: "Notifications" },
+  { id: "messages", icon: <MdOutlineMailOutline className="sidebar-icon" />, text: "Messages" },
+  { id: "bookmarks", icon: <FaRegBookmark className="sidebar-icon" />, text: "Bookmarks" },
+  { id: "profile", icon: <IoPersonOutline className="sidebar-icon" />, text: "Profile" },
+
+  ];
+
+  return (
+    <div className="sidebar-left">
+      {menuItems.map((item) => (
+        <div
+          key={item.id}
+          className={`sidebar-item ${active === item.id ? "active" : ""}`} // Add active class
+          onClick={() => setActive(item.id)} // Update active state on click
+        >
+          {item.icon}
+          <span>{item.text}</span>
+        </div>
+      ))}
+    </div>
+  );
 }
 
 export default SidebarLeft
