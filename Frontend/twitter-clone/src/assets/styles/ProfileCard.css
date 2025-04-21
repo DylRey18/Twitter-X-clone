@@ -1,0 +1,34 @@
+.profile-card {
+    display: flex;
+    align-items: left;
+    padding: 10px; /* Space inside the card */
+    border-radius: 30px;
+    margin-right: 12em;
+  }
+  
+.profile-card:hover{
+  background-color: #1c2731;;
+}
+
+  .profile-picture {
+    width: 40px; /* Size of profile picture */
+    height: 40px;
+    border-radius: 50%; /* Make it circular */
+    margin-right: 10px; /* Space between picture and info */
+  }
+  
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .username {
+    font-weight: bold; /* Make the username stand out */
+    font-size: 1em;
+    color: white; /* Text color */
+  }
+  
+  .handle {
+    font-size: 0.9em;
+    color: gray; /* Subtle color for the handle */
+  }

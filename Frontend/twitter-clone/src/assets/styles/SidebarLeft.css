@@ -1,18 +1,33 @@
 .sidebar-left {
     border-top: 1px solid var(--light-gray);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
     background-color: var(--dark-blue);
+    justify-content: space-between; /* Space out items evenly */
     display: flex;
     flex-direction: column; /* Stack items vertically */
-    align-items: center;
+    border-right: 1px solid var(--light-gray);
+    padding-left: 10em;
+    padding-bottom: 17em;
+    align-items: center; /* Align icon and text horizontally */
+    
   }
 
+  .menu-items {
+    flex-grow: 1; /* Push content to take the available space */
+  }
+
+  .sidebar-left a {
+    text-decoration: none; /* Removes underline from links */
+    
+  }
   .sidebar-item {
-    display: flex;
+    margin-right: 12em;
+    justify-content:left;
+    display: flex; /* Ensure the item fits its content width only */
     align-items: center; /* Align icon and text horizontally */
-    gap: 0.5em; /* Space between icon and text */
-    padding: 0.5em; /* Add spacing around each item */
+    gap: 0.8em; /* Space between icon and text */
+    padding: 0.8em; /* Internal spacing for each item */
+    margin-bottom: 1em; /* Vertical spacing between items */
     cursor: pointer; /* Make items interactive */
     transition: background-color 0.3s ease; /* Smooth hover effect */
     border-radius: 30px;
@@ -23,12 +38,17 @@
   }
   
   .sidebar-item span {
-    font-size: 1.2em; /* Adjust text size */
+    font-size: 1.4em; /* Adjust text size */
     color: #ffffff; /* Text color */
   }
 
   .sidebar-item.active{
     font-weight: bold;
+  }
+
+
+  .sidebar-item a {
+    text-decoration: none; /* Removes underline from links */
   }
 
   .sidebar-left .sidebar-icon {

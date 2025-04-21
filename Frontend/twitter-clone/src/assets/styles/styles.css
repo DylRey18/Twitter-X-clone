@@ -39,19 +39,20 @@ flex-shrink: 0; /* Prevents shrinking of sidebars */
 
 /* SidebarLeft styles */
 .layout-container .sidebar-left {
-width: 30%; /* Adjust as needed for sidebar width */
+width: 25%; /* Adjust as needed for sidebar width */
 background-color: #15202b; /* Example background color */
+
 }
 
 /* Main content styles */
 .layout-container main {
-width: 40%; /* Expands to fill available space */
+width: 50%; /* Expands to fill available space */
 padding: 1em; /* Optional padding */
 background-color: #15202b; /* Example background */
 }
 
 /* SidebarRight styles */
 .layout-container .sidebar-right {
-width: 30%; /* Adjust as needed for sidebar width */
+width: 25%; /* Adjust as needed for sidebar width */
 background-color: #15202b; /* Example background color */
 }
