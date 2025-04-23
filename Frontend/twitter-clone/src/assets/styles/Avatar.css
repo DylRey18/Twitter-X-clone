@@ -1,0 +1,6 @@
+.avatar-picture {
+    width: 40px; /* Size of profile picture */
+    height: 40px;
+    border-radius: 50%; /* Make it circular */
+    margin-right: 10px; /* Space between picture and info */
+  }

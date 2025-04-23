@@ -1,8 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import "../../assets/styles/Avatar.css"
-function Avatar() {
+
+
+function Avatar({username,image}) {
   return (
-    <div>Avatar</div>
+    <Link to={`/profile`} >
+        <img className='avatar-picture' src={image} alt="Avatar" />
+    </Link>
   )
 }
 
