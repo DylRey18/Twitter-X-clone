@@ -35,24 +35,24 @@ height: 100vh; /* Ensures the layout takes the full viewport height */
 
 .layout-container > * {
 flex-shrink: 0; /* Prevents shrinking of sidebars */
+box-sizing: border-box; /* Ensures padding/border don’t add to element width */
 }
 
 /* SidebarLeft styles */
 .layout-container .sidebar-left {
-width: 25%; /* Adjust as needed for sidebar width */
+width: 30%; /* Adjust as needed for sidebar width */
 background-color: #15202b; /* Example background color */
 
 }
 
 /* Main content styles */
 .layout-container main {
-width: 50%; /* Expands to fill available space */
-padding: 1em; /* Optional padding */
+width: 40%; /* Expands to fill available space */
 background-color: #15202b; /* Example background */
 }
 
 /* SidebarRight styles */
 .layout-container .sidebar-right {
-width: 25%; /* Adjust as needed for sidebar width */
+width: 30%; /* Adjust as needed for sidebar width */
 background-color: #15202b; /* Example background color */
 }

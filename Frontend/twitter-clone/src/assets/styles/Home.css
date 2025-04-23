@@ -1,4 +1,29 @@
 .home{
     min-width: fit-content;
     overflow-y: scroll;
+    border-right: 1px solid var(--light-gray);
+    border-top: 1px solid var(--light-gray);
+    height: 93vh;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.home::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+.home__header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 15px 20px;
+    border-right: 1px solid var(--light-gray);
+    border-top: 1px solid var(--light-gray);
+}
+
+.home__header > h2{
+    font-size: 20px;
+    font-weight: 800;
 }
