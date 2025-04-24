@@ -1,6 +1,7 @@
 import React from 'react'
 import "../../assets/styles/Home.css"
 import TweetboxForm from '../form/TweetboxForm'
+import Post from '../card/Post.js'
 
 function Home() {
   return (
@@ -16,9 +17,8 @@ function Home() {
           <TweetboxForm/>
 
           {/* post */}
-          <h3>test</h3>
-          <h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3>
-          {/* post */}
+          <Post/>
+                   {/* post */}
           {/* post */}
           {/* post */}
           {/* post */}

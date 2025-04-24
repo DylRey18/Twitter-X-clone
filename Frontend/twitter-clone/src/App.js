@@ -5,7 +5,7 @@ import Home from "./components/pagesFunction/Home.js";
 import Bookmark from "./components/pagesFunction/Bookmark.js";
 import Explore from "./components/pagesFunction/Explore.js";
 import Layout from "./components/pagesLayout/Layout.js";
-import Post from "./components/pagesFunction/Post.js";
+import Post from "./components/card/Post.js";
 import Messages from "./components/pagesFunction/Messages.js";
 import Notification from "./components/pagesFunction/Notification.js";
 import Profile from "./components/pagesFunction/Profile.js";
