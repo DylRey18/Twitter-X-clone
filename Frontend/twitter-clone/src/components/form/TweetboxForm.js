@@ -5,10 +5,11 @@ import profilePicture from '../../assets/image/Profile.png'
 
 function TweetboxForm() {
   return (
-    <div>
+    <div className='tweetbox'>
         <form>
-            <div>
+            <div className='tweetbox__input'>
                 <Avatar username={"test"} image={profilePicture}/>
+                <input placeholder="What's happening?" type="text" />
             </div>
             <button className='post-small-button'>
                 Post
