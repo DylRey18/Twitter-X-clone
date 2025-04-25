@@ -18,6 +18,12 @@ function Home() {
 
           {/* post */}
           <Post/>
+          <Post/>
+          <Post/>
+          <Post/>
+          <Post/>
+          <Post/>
+          <Post/>
                    {/* post */}
           {/* post */}
           {/* post */}

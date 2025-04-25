@@ -1,0 +1,51 @@
+.post{
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--light-gray);
+    padding-bottom: 10px;
+    margin-right: 10px;
+    color: white;
+    
+}
+
+.post__body{
+    flex: 1; /*if you want to make it dynamic size change this for the img */
+    padding: 10px;
+    display: flex; /* Add this */
+    flex-direction: column; /* Stack items vertically */
+}
+
+.post__body > img {
+    border-radius: 20px;
+}
+
+.post__footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 100%; /* Ensures it stretches across the parent */
+}
+
+.post__badge{
+    color: #26a7de;
+}
+
+.post__header > h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.post__headerDescription{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.post__headerSpecial{
+    font-weight: 600;
+    font-size: 12px;
+    color: gray;
+}
+
+.post__avatar{
+    padding-left: 15px;
+    padding-top: 15px;
+}
