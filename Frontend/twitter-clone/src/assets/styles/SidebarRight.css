@@ -1,0 +1,40 @@
+.sidebar-right{
+   
+   padding-right: 2em;
+}
+
+.sidebar-right-input{
+    display: flex;
+    align-items: center;
+    background-color: var(--dark-blue);
+    padding: 10px;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 1px solid white;
+}
+
+.sidebar-right-input > input {
+    border: none;
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+.sidebar-right-searchIcon {
+    color: gray
+}
+
+.sidebar-right-container{
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: var(--dark-blue);
+    border-radius: 25px;
+    border: 1px solid white;
+}
+
+.sidebar-right-container > h2 {
+    font-size: 18px;
+    font-weight: 800;
+    color: white;
+}
