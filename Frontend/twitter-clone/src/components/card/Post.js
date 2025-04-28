@@ -7,35 +7,25 @@ import { FaRegBookmark,FaRegComment,FaRetweet  } from "react-icons/fa";
 import { IoMdHeartEmpty } from "react-icons/io";
 // IoMdHeart , FaBookmark
 //Essentialy the same as tweet card
-function Post(
-  {
-    displayName,
-    username,
-    verified,
-    timestamp,
-    text,
-    image,
-    avatar
-  }
-) {
+function Post({displayName,username,verified,timestamp,text,image,avatar}) {
   return (
     <div className='post'>
       <div className='post__avatar'>
-        <Avatar username={"test"} image={profilePicture}/>
+        <Avatar username={displayName} image={avatar}/>
       </div>
       {/* Body */}
       <div className='post__body'>
         <div className='post__header'>
           <div className='post__headerText'>
               <h3>
-                Dyl <span className='post__headerSpecial'> <MdVerified className='post__badge'/> @dylpog </span>
+                {displayName} <span className='post__headerSpecial'> {verified && <MdVerified className='post__badge'/>} @{username} </span>
               </h3>
           </div>
           <div className="post__headerDescription">
-            <p>This is the post header</p>
+            <p>{text}</p>
           </div>
         </div>
-        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmZvdXNqMWE5N3hxb2x6NjVhZ3MxZ2gxdDU4NzU5cmt6N241cnQxMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/FBZjLPUa166w8/giphy.gif" 
+        <img src={image} 
         alt="" />
         <div className='post__footer'>
           <FaRegBookmark/>
