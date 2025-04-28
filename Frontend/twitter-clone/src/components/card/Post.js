@@ -7,7 +7,7 @@ import { FaRegBookmark,FaRegComment,FaRetweet  } from "react-icons/fa";
 import { IoMdHeartEmpty } from "react-icons/io";
 // IoMdHeart , FaBookmark
 //Essentialy the same as tweet card
-function Post({displayName,username,verified,timestamp,text,image,avatar}) {
+function Post({displayName,username,verified,text,image,avatar}) {
   return (
     <div className='post'>
       <div className='post__avatar'>
