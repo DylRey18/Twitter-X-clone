@@ -11,7 +11,7 @@ firebase-debug.*.log*
 .firebase/
 
 ./src/firebase.js
-Backend/src/firebase.js
+**/firebase.js
 
 # Firebase config
 
